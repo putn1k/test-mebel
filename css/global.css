@@ -1,0 +1,132 @@
+:root {
+  --cod-gray: #1a1a1a;
+  --mine-shaft: #333333;
+  --silver-chalice: #a0a0a0;
+  --silver: #c4c4c4;
+  --apple: #359c31;
+  --apple-light: #4eb84a;
+  --pastel-green: #6dd76a;
+  --matrix: #ab5054;
+  --white-100: #ffffff;
+  --black-25: rgba(0, 0, 0, 0.25);
+  --text: var(--cod-gray);
+  --text-gray: var(--mine-shaft);
+  --text-altern: var(--white-100);
+  --text-notaccent: var(--silver-chalice);
+  --bg: var(--white-100);
+  --bg-altern: var(--cod-gray);
+  --accent: var(--apple);
+  --border: var(--silver);
+  --checkbox: var(--silver-chalice);
+  --focused: var(--apple-light);
+  --actived: var(--pastel-green);
+  --disabled: var(--silver);
+  --warning: var(--matrix); }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  color: var(--text);
+  background-color: var(--bg);
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+p {
+  margin: 0; }
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+input[type='number'] {
+  -moz-appearance: textfield; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+.is-open-menu {
+  overflow: hidden; }
+
+.site-container {
+  overflow: hidden; }
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 1440px; }
+  @media (min-width: 1440px) {
+    .container {
+      padding: 0 120px; } }
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none; }
+
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 5px rgba(50, 50, 71, 0.16);
+  z-index: 1; }
+  .overlay--showed {
+    display: block; }
+
+/*# sourceMappingURL=global.css.map */
