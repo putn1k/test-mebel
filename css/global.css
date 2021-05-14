@@ -21,29 +21,34 @@
   --focused: var(--apple-light);
   --actived: var(--pastel-green);
   --disabled: var(--silver);
-  --warning: var(--matrix); }
+  --warning: var(--matrix);
+}
 
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/montserrat-regular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/montserrat-semibold.woff2") format("woff2");
   font-weight: 600;
   font-display: swap;
-  font-style: normal; }
+  font-style: normal;
+}
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
@@ -52,54 +57,69 @@ body {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px; }
+  line-height: 20px;
+}
 
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 a {
   color: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 p {
-  margin: 0; }
+  margin: 0;
+}
 
 ul,
 ol {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 input[type='number'] {
-  -moz-appearance: textfield; }
+  -moz-appearance: textfield;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 .is-open-menu {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .site-container {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .btn-reset {
   border: none;
   background: transparent;
   padding: 0;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .container {
   margin: 0 auto;
   padding: 0 16px;
-  max-width: 1440px; }
-  @media (min-width: 1440px) {
-    .container {
-      padding: 0 120px; } }
+  max-width: 1440px;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 120px;
+  }
+}
 
 .js-focus-visible :focus:not(.focus-visible) {
-  outline: none; }
+  outline: none;
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="radio"].visually-hidden,
@@ -114,7 +134,8 @@ input[type="checkbox"].visually-hidden {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .overlay {
   display: none;
@@ -125,8 +146,11 @@ input[type="checkbox"].visually-hidden {
   bottom: 0;
   background: rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 5px rgba(50, 50, 71, 0.16);
-  z-index: 1; }
-  .overlay--showed {
-    display: block; }
+  z-index: 1;
+}
+
+.overlay--showed {
+  display: block;
+}
 
 /*# sourceMappingURL=global.css.map */
